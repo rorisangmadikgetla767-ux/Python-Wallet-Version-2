@@ -46,7 +46,7 @@ def deposit():
         balance = balance + Amount
         data[3] = str(balance)
         
-        with open("Account.txt", "w") as file:
+        with open("Account.txts", "w") as file:
             file.write(", ".join(data))
         
 def withdraw():
